@@ -1,0 +1,66 @@
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	color: $black;
+}
+
+.container__fluid {
+	padding-left: 0;
+	padding-right: 0;
+}
+h2 {
+	font-weight: 700;
+	font-size: 45px;
+}
+h3 {
+	font-size: 30px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+h4 {
+	font-size: 20px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+h5 {
+	font-size: 15px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+.subtitle {
+	color: #4c4c4c;
+	font-weight: 400;
+	text-transform: uppercase;
+	font-size: 16px;
+}
+.icons {
+	border: 2px solid $orange;
+	border-radius: 100px;
+	flex-shrink: 0;
+}
+
+.desc {
+	color: $silver;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 1.8em;
+}
+
+.wline:after {
+	display: block;
+	content: '';
+	width: 4px;
+	height: 50px;
+	background: $orange;
+	margin: 0 20px;
+}
+
+.hline:before {
+	display: block;
+    content: '';
+    width: 50px;
+    height: 4px;
+    background: $orange;
+	margin: 30px auto 20px auto;
+}
