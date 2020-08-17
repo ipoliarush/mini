@@ -1,5 +1,5 @@
 .header {
-	background: url(../img/header-bg.png) no-repeat center center/cover;
+	background: url("../img/header-bg.png") no-repeat center center/cover;
 	color: $white;
 	text-align: center;
 	padding-top: 85px;
@@ -31,7 +31,6 @@
 	}
 
 	.nav {
-
 		&__item {
 			display: flex;
 
@@ -62,7 +61,6 @@
 				color: $black;
 			}
 		}
-
 	}
 
 	&__subtitle {
@@ -87,9 +85,7 @@
 		color: $white;
 		padding: 10px 0;
 		border: 2px solid $white;
-		margin: 0 auto;
-		margin-top: 90px;
-		margin-bottom: 130px;
+		margin: 90px auto 130px;
 		width: 160px;
 		transition: $transition05;
 		outline: 0;
@@ -100,6 +96,7 @@
 			background: $orange;
 			border-color: $orange;
 		}
+
 		&:active {
 			box-shadow: 0 0 10px $orange;
 		}
@@ -166,6 +163,7 @@
 			flex-shrink: 0;
 			overflow: hidden;
 			max-height: 100%;
+
 			img {
 				height: 100%;
 				width: 100%;
@@ -173,7 +171,6 @@
 				image-rendering: crisp-edges;
 			}
 		}
-
 	}
 
 	.skills {
@@ -183,9 +180,10 @@
 			width: 50%;
 			position: relative;
 			padding-right: 80px;
+
 			img {
-				max-height:100%;
-				max-width:100%
+				max-height: 100%;
+				max-width: 100%;
 			}
 		}
 
@@ -263,13 +261,11 @@
 		&__item:nth-child(4) .skills__line {
 			width: 71%;
 		}
-
 	}
-
 }
 
 .minib {
-	background: url(../img/minib-bg.png) no-repeat center center/cover;
+	background: url("../img/minib-bg.png") no-repeat center center/cover;
 	min-height: 700px;
 	color: $white;
 	padding-top: 250px;
@@ -299,7 +295,6 @@
 		font-weight: 700;
 		font-size: 24px;
 		text-transform: uppercase;
-
 	}
 
 	&__item {
@@ -321,15 +316,13 @@
 		margin-bottom: 30px;
 	}
 
-	&__title {
-		
-	}
+	&__title {}
 
 	&__subtitle {
 		font-weight: 700;
 		font-size: 25px;
 	}
-	
+
 	&__quote {
 		max-width: 800px;
 		font-size: 22px;
@@ -337,6 +330,7 @@
 		font-style: italic;
 		margin: 0 auto;
 	}
+
 	&__image {
 		width: 105px;
 		height: 105px;
@@ -346,10 +340,8 @@
 		position: relative;
 		box-shadow: 0 0 0 1px #e5e5e5;
 		overflow: hidden;
-		margin-bottom: 25px;
-		margin-right: auto;
-		margin-left: auto;
-		margin-top: 25px;
+		margin: 25px auto;
+
 		img {
 			min-width: 105px;
 			min-height: 105px;
@@ -358,6 +350,7 @@
 			image-rendering: crisp-edges;
 		}
 	}
+
 	.slick-dots {
 		display: flex;
 		justify-content: center;
@@ -380,6 +373,7 @@
 			background: transparentize($white, .4);
 		}
 	}
+
 	&__comment {
 		width: 105px;
 		height: 105px;
@@ -388,33 +382,38 @@
 		color: $orange;
 		margin: 0 auto;
 	}
+
 	&__text {
 		font-size: 22px;
 		max-width: 835px;
 		font-weight: 600;
-		margin: 30px auto 20px auto;
+		margin: 30px auto 20px;
+
 		a {
 			color: $orange;
 		}
 	}
+
 	&__mark {
 		color: #808080;
 		font-size: 15px;
 		font-style: italic;
 	}
+
 	&__clients {
 		margin-top: 50px;
 	}
+
 	&__cell {
 		max-width: 260px;
 		width: 25%;
 		cursor: pointer;
-		
+
 		img {
 			width: 100%;
 			filter: grayscale(1);
 			transition: $transition05;
-			
+
 			&:hover {
 				filter: none;
 			}
@@ -541,7 +540,6 @@
 	}
 
 	.activities {
-
 		margin: 125px 0 !important;
 		padding-bottom: 125px;
 		border-bottom: 2px solid #e5e5e5;
@@ -573,11 +571,9 @@
 		&__title {
 			margin-bottom: 25px;
 		}
-
 	}
 
 	.pricing {
-
 		&__head {
 			max-width: 400px;
 		}
@@ -608,38 +604,26 @@
 				width: 33.33%;
 				border-collapse: collapse;
 				border: none;
-				margin: 16px 0 10px 0;
+				margin: 16px 0 10px;
 			}
 
 			&__head {
-				box-shadow:
-					1px 0 0 0 #e5e5e5,
-					0 1px 0 0 #e5e5e5,
-					1px 1px 0 0 #e5e5e5,
-					1px 0 0 0 #e5e5e5 inset,
-					0 1px 0 0 #e5e5e5 inset;
+				box-shadow: 1px 0 0 0 #e5e5e5, 0 1px 0 0 #e5e5e5, 1px 1px 0 0 #e5e5e5, 1px 0 0 0 #e5e5e5 inset, 0 1px 0 0 #e5e5e5 inset;
 				padding: 20px 0;
 			}
 
-			&__title,
-			&__subtitle {
+			&__subtitle,
+			&__title {
 				font-weight: 700;
 				font-size: 22px;
-
 			}
 
 			.hline:before {
-				margin: 15px auto 10px auto;
+				margin: 15px auto 10px;
 			}
 
 			&__text {
-				box-shadow:
-					1px 0 0 0 #e5e5e5,
-					0 1px 0 0 #e5e5e5,
-					1px 1px 0 0 #e5e5e5,
-					1px 0 0 0 #e5e5e5 inset,
-					0 1px 0 0 #e5e5e5 inset;
-
+				box-shadow: 1px 0 0 0 #e5e5e5, 0 1px 0 0 #e5e5e5, 1px 1px 0 0 #e5e5e5, 1px 0 0 0 #e5e5e5 inset, 0 1px 0 0 #e5e5e5 inset;
 				color: #737373;
 				font-weight: 400;
 				padding: 15px 0;
@@ -653,12 +637,7 @@
 
 			&__button {
 				background: #fafafa;
-				box-shadow:
-					1px 0 0 0 #e5e5e5,
-					0 1px 0 0 #e5e5e5,
-					1px 1px 0 0 #e5e5e5,
-					1px 0 0 0 #e5e5e5 inset,
-					0 1px 0 0 #e5e5e5 inset;
+				box-shadow: 1px 0 0 0 #e5e5e5, 0 1px 0 0 #e5e5e5, 1px 1px 0 0 #e5e5e5, 1px 0 0 0 #e5e5e5 inset, 0 1px 0 0 #e5e5e5 inset;
 
 				a {
 					color: $black;
@@ -677,6 +656,7 @@
 						color: $white;
 						background: $orange;
 					}
+
 					&:active {
 						box-shadow: 0 0 10px $orange;
 					}
@@ -691,12 +671,7 @@
 						background: $orange;
 						color: $white;
 						padding-top: 36px;
-						box-shadow:
-							1px 0 0 0 $orange,
-							0 1px 0 0 $orange,
-							1px 1px 0 0 $orange,
-							1px 0 0 0 $orange inset,
-							0 1px 0 0 $orange inset;
+						box-shadow: 1px 0 0 0 $orange, 0 1px 0 0 $orange, 1px 1px 0 0 $orange, 1px 0 0 0 $orange inset, 0 1px 0 0 $orange inset;
 						z-index: 1;
 					}
 
@@ -716,13 +691,7 @@
 
 					.money__text_light {
 						background: #f2f2f2;
-						box-shadow:
-							1px 0 0 0 #f2f2f2,
-							0 1px 0 0 #f2f2f2,
-							1px 1px 0 0 #f2f2f2,
-							1px 0 0 0 #f2f2f2 inset,
-							0 1px 0 0 #f2f2f2 inset;
-						
+						box-shadow: 1px 0 0 0 #f2f2f2, 0 1px 0 0 #f2f2f2, 1px 1px 0 0 #f2f2f2, 1px 0 0 0 #f2f2f2 inset, 0 1px 0 0 #f2f2f2 inset;
 						z-index: 1;
 					}
 				}
@@ -732,19 +701,20 @@
 }
 
 .portfolio {
-	
 	padding: 100px 0;
-	
+
 	&__slider {
-		margin: 150px 0 120px 0;
+		margin: 150px 0 120px;
 		padding-bottom: 115px;
-    	border-bottom: 2px solid #e5e5e5;
+		border-bottom: 2px solid #e5e5e5;
 	}
+
 	&__img {
 		width: 100%;
 		height: 80vh;
 		flex-shrink: 0;
 		overflow: hidden;
+
 		img {
 			min-width: 300px;
 			height: 80vh;
@@ -753,13 +723,16 @@
 			image-rendering: crisp-edges;
 		}
 	}
+
 	&__caption {
 		margin-top: 110px;
 	}
+
 	&__subtitle {
 		font-size: 14px;
 		color: #808080;
 	}
+
 	.prev {
 		position: absolute;
 		bottom: 0;
@@ -768,26 +741,30 @@
 		height: 30px;
 		text-align: center;
 		line-height: 1.6em;
-		left: -35px; 
-		bottom: 185px; 
+		left: -35px;
+		bottom: 185px;
 		right: 0;
 		margin: 0 auto;
 		z-index: 1;
 		cursor: pointer;
 		transition: $transition05;
+
 		&:before {
 			content: '\f104';
 			font-family: FontAwesome;
 			font-weight: 900;
 			font-size: 24px;
 		}
+
 		&:hover {
 			background: #e5e5e5;
 		}
+
 		&:active {
 			box-shadow: 0 0 10px #e5e5e5;
 		}
 	}
+
 	.next {
 		position: absolute;
 		border: 2px solid #e5e5e5;
@@ -796,35 +773,39 @@
 		text-align: center;
 		line-height: 1.6em;
 		left: 35px;
-		bottom: 185px; 
+		bottom: 185px;
 		right: 0;
 		margin: 0 auto;
 		z-index: 1;
 		cursor: pointer;
 		transition: $transition05;
+
 		&:before {
 			content: '\f105';
 			font-family: FontAwesome;
 			font-weight: 900;
 			font-size: 24px;
 		}
+
 		&:hover {
 			background: #e5e5e5;
 		}
+
 		&:active {
 			box-shadow: 0 0 10px #e5e5e5;
 		}
 	}
+
 	.slick-dots {
 		position: absolute;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		margin-top: -25%;
-  		overflow: auto;
-  		top: 0; 
-		left: auto; 
-		bottom: 0; 
+		overflow: auto;
+		top: 0;
+		left: auto;
+		bottom: 0;
 		right: 20px;
 
 		.slick-active .portfolio__dots {
@@ -845,9 +826,8 @@
 			background: transparentize($white, .4);
 		}
 	}
-	
+
 	.gallery {
-		
 		&__item {
 			display: flex;
 			font-size: 14px;
@@ -868,29 +848,34 @@
 				margin-right: 0;
 				margin-left: 0;
 			}
+
 			&_active {
 				color: $orange;
 			}
-
 		}
+
 		&__content {
 			margin-top: 80px;
 		}
+
 		&__elem {
-     		width: 25%;
+			width: 25%;
 			margin-bottom: 15px;
 			cursor: pointer;
+
 			&:hover {
 				.gallery__title {
 					color: $orange;
 				}
 			}
 		}
+
 		&__img {
 			width: 100%;
 			height: 200px;
 			flex-shrink: 0;
 			overflow: hidden;
+
 			img {
 				min-width: 280px;
 				min-height: 200px;
@@ -899,10 +884,12 @@
 				image-rendering: crisp-edges;
 			}
 		}
+
 		&__title {
 			transition: $transition05;
 			margin-top: 15px;
 		}
+
 		&__subtitle {
 			font-size: 14px;
 			color: #8c8c8c;
@@ -913,31 +900,35 @@
 
 .blog {
 	padding: 100px 0;
-	
+
 	&__content {
-		padding: 150px 0 0 0;
+		padding: 150px 0 0;
 	}
+
 	&__item {
 		max-width: 555px;
 		width: 48%;
 		margin-bottom: 60px;
 	}
+
 	&__wrap {
 		position: relative;
-		
 	}
+
 	&__picture {
 		width: 100%;
 		max-height: 600px;
 		height: 100%;
 		flex-shrink: 0;
 		overflow: hidden;
+
 		img {
 			width: 100%;
 			object-fit: cover;
 			image-rendering: crisp-edges;
 		}
 	}
+
 	&__inside {
 		display: flex;
 		position: absolute;
@@ -946,6 +937,7 @@
 		align-items: flex-end;
 		justify-content: flex-end;
 	}
+
 	&__icon {
 		width: 45px;
 		height: 45px;
@@ -953,20 +945,24 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
+
 		img {
 			width: 20px;
 		}
 	}
+
 	&__title {
 		font-size: 20px;
 		padding: 25px 45px 10px 20px;
 		background: $white;
 	}
+
 	&__desc {
 		display: flex;
 		margin-top: 20px;
 		justify-content: space-between;
 	}
+
 	&__date {
 		min-width: 130px;
 		color: #808080;
@@ -977,14 +973,17 @@
 		display: flex;
 		flex-direction: column;
 	}
+
 	&__offer {
 		margin-left: 20px;
 	}
+
 	&__text {
 		color: #737373;
 		font-size: 16px;
 		font-weight: 500;
 	}
+
 	&__button {
 		font-size: 13px;
 		font-weight: 700;
@@ -1004,6 +1003,7 @@
 			color: $white;
 			background: $orange;
 		}
+
 		&:active {
 			box-shadow: 0 0 10px $orange;
 		}
@@ -1013,10 +1013,11 @@
 .contact {
 	padding-top: 100px;
 	padding-bottom: 40px;
-	
+
 	.field {
 		position: relative;
 		margin-bottom: 12px;
+
 		i {
 			transition: $transition05;
 			position: absolute;
@@ -1026,14 +1027,17 @@
 			color: #b4b4b4;
 		}
 	}
+
 	&__content {
 		margin-top: 150px;
 		margin-bottom: 100px;
 	}
+
 	&__form {
 		width: 55%;
-		
-		input, textarea {
+
+		input,
+		textarea {
 			width: 100%;
 			border: 2px solid #d9d9d9;
 			transition: $transition05;
@@ -1042,18 +1046,23 @@
 			font-weight: 500;
 			color: #808080;
 			outline: 0;
-			
-			&:focus, &:hover {
+
+			&:focus,
+			&:hover {
 				border-color: $orange;
 			}
-			&:focus + i, &:hover + i {
+
+			&:focus + i,
+			&:hover + i {
 				color: $orange;
 			}
 		}
+
 		textarea {
 			resize: none;
 		}
 	}
+
 	&__submit {
 		button {
 			font-size: 14px;
@@ -1066,37 +1075,44 @@
 			border: 2px solid $orange;
 			transition: $transition05;
 			outline: 0;
+
 			&:hover {
 				background: $orange;
 				color: $white;
 			}
+
 			&:focus {
 				border-color: $orange;
 				border-radius: 0;
 			}
+
 			&:active {
 				box-shadow: 0 0 10px $orange;
 			}
 		}
 	}
+
 	&__title {
 		margin-bottom: 35px;
 	}
-	&__name {
-	
-	}
+
+	&__name {}
+
 	&__info {
 		width: 40%;
 	}
+
 	&__text {
 		font-size: 16px;
 		color: #737373;
 		font-weight: 500;
 		margin-bottom: 30px;
 	}
+
 	&__item {
 		display: flex;
 		align-items: center;
+
 		i {
 			width: 34px;
 			height: 34px;
@@ -1110,63 +1126,69 @@
 		}
 		margin-bottom: 8px;
 	}
+
 	&__desc {
 		font-size: 16px;
 		font-weight: 500;
 	}
+
 	&__map {
 		width: 100%;
 		height: 600px;
 		position: relative;
 		overflow: hidden;
+
 		iframe {
 			height: 100%;
 			width: 100%;
 			border: 0;
 		}
 	}
+
 	&__triangle {
-		
 		&_top {
 			content: '';
-    		left: 0; 
-			bottom: 0; 
-    		border-bottom: 100px solid $white;
-    		border-left: 100vw solid transparent;
-    		position: absolute;
+			left: 0;
+			bottom: 0;
+			border-bottom: 100px solid $white;
+			border-left: 100vw solid transparent;
+			position: absolute;
 		}
+
 		&_bottom {
 			content: '';
-    		right: 0; 
-			top: 0; 
-    		border-top: 100px solid $white;
-    		border-right: 100vw solid transparent;
-    		position: absolute;	
+			right: 0;
+			top: 0;
+			border-top: 100px solid $white;
+			border-right: 100vw solid transparent;
+			position: absolute;
 		}
 	}
 }
 
 .footer {
 	margin-bottom: 40px;
+
 	&__copy {
 		font-size: 14px;
 		font-weight: 600;
 		text-transform: uppercase;
 	}
-	&__soc {
-		
-	}
+
+	&__soc {}
+
 	&__item {
 		color: $black;
 		margin-left: 20px;
 		font-size: 15px;
 		cursor: pointer;
 		transition: $transition05;
-		
+
 		&:hover {
 			color: $orange;
 			text-decoration: none;
 		}
+
 		&:active {
 			opacity: 0.6;
 		}

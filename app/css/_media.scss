@@ -10,102 +10,119 @@
 			}
 		}
 	}
+
 	.about {
 		.story {
 			&__image {
 				width: 280px;
 			}
 		}
+
 		.skills {
 			&__text {
 				width: 330px;
 			}
 		}
 	}
+
 	.blog {
 		&__title {
 			width: 70%;
 		}
 	}
 }
-
 /* 768-992px */
 @media screen and (max-width: 992px) {
 	.header {
 		padding-top: 40px;
 		padding-bottom: 70px;
+
 		.head {
 			margin-bottom: 30px;
-			
+
 			.logo {
 				padding-top: 13px;
 				font-size: 16px;
 				width: 50px;
-    			height: 50px;
+				height: 50px;
 			}
 		}
+
 		.nav {
 			display: none;
 		}
+
 		&__button {
-			margin: 60px auto 100px auto;
+			margin: 60px auto 100px;
 		}
 	}
+
 	.team {
 		&__item {
 			width: 49%;
 		}
+
 		&__list {
 			padding-top: 100px!important;
 		}
 	}
+
 	.about {
 		.story {
 			flex-direction: column;
 			align-items: center;
 			padding-top: 100px;
 			padding-bottom: 100px;
-			
+
 			&__icons {
 				margin-bottom: 30px;
 			}
+
 			&__text {
 				width: 100%;
 				margin-bottom: 30px;
 				text-align: center;
 			}
+
 			&__image {
 				width: 80%;
 			}
 		}
+
 		.skills {
 			padding-top: 100px;
 			flex-direction: column-reverse;
-			
+
 			&__wrap {
 				width: 100%;
 			}
+
 			&__head {
 				flex-direction: column;
 				align-items: center;
 			}
+
 			&__icons {
 				margin-bottom: 30px;
 			}
+
 			&__text {
 				width: 100%;
 				text-align: center;
 			}
+
 			&__image {
 				margin-top: 50px;
 				width: 100%;
 			}
+
 			&__picture {
 				margin-left: 80px;
 				bottom: 0;
 			}
 		}
 	}
+
 	.portfolio {
 		.gallery {
 			&__item {
@@ -114,68 +131,84 @@
 					margin-left: 15px;
 				}
 			}
+
 			&__elem {
 				width: 50%;
 			}
 		}
 	}
+
 	.service {
 		.activities {
-			margin: 100px 0!important;
+			margin: 100px 0!important !important;
 			padding-bottom: 100px;
 		}
+
 		.pricing {
 			flex-direction: column;
-			
+
 			&__head {
 				margin-bottom: 50px;
 				max-width: 100%;
 				text-align: center;
 			}
+
 			.money {
 				width: 100%;
 			}
+
 			&__icons {
-				margin: 0 auto 30px auto;
+				margin: 0 auto 30px;
 			}
+
 			&__desc {
 				max-width: 100%;
 			}
 		}
 	}
+
 	.contact {
 		&__content {
 			flex-wrap: wrap;
 		}
+
 		&__form {
 			width: 100%;
 			margin-bottom: 100px;
 		}
+
 		&__info {
 			width: 100%;
 		}
 	}
 }
-
 /* 576-768px */
 @media screen and (max-width: 768px) {
-	.header {
-		&__subtitle {
-			font-size: 36px;
-		}
-		&__title {
-			font-size: 60px;
-		}
-		&__button {
-			margin: 40px auto 80px auto;
-		}
-	}
-	.about {
-	}
 	.head {
 		flex-direction: column;
 		text-align: center;
 	}
+
+	.header {
+		&__subtitle {
+			font-size: 36px;
+		}
+
+		&__title {
+			font-size: 60px;
+		}
+
+		&__button {
+			margin: 40px auto 80px;
+		}
+
+		.head {
+			flex-direction: row;
+		}
+	}
+
+	.about {}
+
 	.wline {
 		&:after {
 			width: 50px;
@@ -184,141 +217,173 @@
 			margin: 20px 0;
 		}
 	}
+
 	.title {
 		display: flex;
 		flex-direction: column;
 	}
+
 	.minib {
 		&__citation {
 			font-size: 38px;
-			&:after, &:before {
+
+			&:after,
+			&:before {
 				font-size: 90px;
 			}
 		}
+
 		&__list {
 			flex-wrap: wrap;
 		}
+
 		&__item {
 			width: 50%;
 			align-items: center;
 			margin-bottom: 40px;
 		}
+
 		&__icons {
-			margin: 0 auto 30px auto;
+			margin: 0 auto 30px;
 		}
+
 		&__clients {
 			flex-wrap: wrap;
 		}
+
 		&__cell {
 			width: 50%;
 		}
 	}
+
 	.service {
 		.activities {
 			flex-wrap: wrap;
+
 			&__item {
 				width: 80%;
 				margin-left: auto;
 				margin-right: auto;
 				margin-bottom: 50px;
+
 				&:last-child {
 					margin-bottom: 0;
 				}
 			}
 		}
 	}
+
 	.portfolio {
 		.slick-dots {
 			margin-top: -45%;
 		}
+
 		.gallery {
 			&__list {
 				justify-content: space-between!important;
 			}
-			
+
 			&__item {
-				&:before{
+				&:before {
 					display: none;
-				} 
+				}
 			}
 		}
 	}
+
 	.blog {
 		padding-bottom: 50px;
-		
+
 		&__content {
 			padding: 100px 0 0;
 		}
-		&__item, &__title {
+
+		&__item,
+		&__title {
 			width: 80%;
 		}
+
 		&__item {
 			margin-right: auto;
 			margin-left: auto;
 		}
 	}
+
 	.contact {
 		&__content {
 			margin-top: 100px;
 		}
 	}
 }
-
 /* 320-576px */
 @media screen and (max-width: 576px) {
-	.minib__citation:after, .minib__citation:before {
-    	font-size: 70px;
+	.minib__citation:after,
+	.minib__citation:before {
+		font-size: 70px;
 		margin: 0 5px;
 	}
+
 	.header {
 		&__subtitle {
 			font-size: 30px;
 		}
+
 		&__title {
 			font-size: 45px;
 		}
 	}
+
 	.about {
 		.story {
 			&__image {
 				width: 100%;
 			}
 		}
+
 		.skills {
 			&__image {
 				display: none!important;
 			}
 		}
 	}
+
 	.minib {
 		&__citation {
 			font-size: 30px;
 		}
+
 		&__author {
 			font-size: 20px;
 		}
+
 		&__item {
 			width: 100%;
 		}
+
 		&__slider {
 			padding: 0 15px;
 		}
+
 		&__clients {
 			justify-content: center!important;
 		}
+
 		&__cell {
 			width: 100%;
 			margin-bottom: 10px;
+
 			&:last-child {
 				margin-bottom: 0;
 			}
 		}
 	}
+
 	.team {
 		&__item {
 			width: 100%;
 		}
 	}
+
 	.service {
 		.pricing {
 			.money {
@@ -330,70 +395,85 @@
 			}
 		}
 	}
+
 	.portfolio {
 		.slick-dots {
 			margin-top: -80%;
 		}
+
 		.gallery {
 			&__list {
 				flex-direction: column;
 				align-items: center;
 			}
+
 			&__item {
 				margin-bottom: 5px;
 			}
+
 			&__elem {
 				width: 100%;
 			}
 		}
 	}
+
 	.blog {
 		&__item {
 			width: 100%;
+
 			&:last-child {
 				margin-bottom: 0;
 			}
 		}
+
 		&__inside {
 			position: relative;
 		}
+
 		&__title {
 			width: 100%;
-			padding: 20px 0 0 0;
+			padding: 20px 0 0;
 		}
+
 		&__icon {
 			position: absolute;
 			top: -45px;
 		}
+
 		&__desc {
 			flex-direction: column-reverse;
 		}
+
 		&__offer {
 			margin-left: 0;
 		}
-		&__button {
-	
-		}
+
+		&__button {}
+
 		&__date {
 			position: absolute;
 			right: 0;
 		}
 	}
+
 	.contact {
 		&__submit {
 			margin-left: auto;
 		}
 	}
+
 	.footer {
 		&__content {
 			text-align: center;
 			flex-direction: column-reverse;
 		}
+
 		&__soc {
 			display: flex;
-    		justify-content: space-evenly;
+			justify-content: space-evenly;
 			margin-bottom: 20px;
 		}
+
 		&__item {
 			margin-left: 0;
 		}

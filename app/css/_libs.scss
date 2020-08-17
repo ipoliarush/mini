@@ -1,21 +1,26 @@
 /* Включаем выделение текста в slick слайдере */
-
 /* Для выделения текста */
-.header__slider, .minib__slider, .portfolio__slider {
+.header__slider,
+.minib__slider,
+.portfolio__slider {
 	-webkit-user-select: text;
 	-moz-user-select: text;
 	-ms-user-select: text;
 	user-select: text;
 }
 
-.header__slider.draggable, .minib__slider.draggable, .portfolio__slider.draggable {
+.header__slider.draggable,
+.minib__slider.draggable,
+.portfolio__slider.draggable {
 	-webkit-user-select: none;
 	-moz-user-select: none;
 	-ms-user-select: none;
 	user-select: none;
 }
-
 /* Убираем outline */
-.header__slider .header__item, .minib__slider .minib__elem, .portfolio__slider .portfolio__item {
+
+.header__slider .header__item,
+.minib__slider .minib__elem,
+.portfolio__slider .portfolio__item {
 	outline: none;
 }
