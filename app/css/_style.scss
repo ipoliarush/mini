@@ -628,6 +628,7 @@
 			width: 100%;
 			filter: grayscale(1);
 			transition: $transition05;
+			image-rendering: -webkit-optimize-contrast;
 
 			&:hover {
 				filter: none;
