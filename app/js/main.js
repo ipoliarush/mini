@@ -39,17 +39,16 @@ $(function() {
   });
 
   //Паралакс
-  $(window).resize(function() {
-    width = $(window).width();
-    if (width >= 991) {
-      if ($('.parallaxie').length !== 0) {
-        $('.parallaxie').parallaxie({
-          speed: 0.4,
-          size: "auto",
-        });
-      }
+  width = $(window).width();
+  if (width >= 991) {
+    if ($('.parallaxie').length !== 0) {
+      $('.parallaxie').parallaxie({
+        speed: 0.4,
+        size: "auto",
+      });
     }
-  });
+  }
+
 
 
   //Работа гамбургер меню
