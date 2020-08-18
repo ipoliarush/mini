@@ -45,6 +45,20 @@
 				font-size: 16px;
 				width: 50px;
 				height: 50px;
+
+				&__svg {
+					width: 53px;
+					height: 53px;
+				}
+				&__circle1,
+				&__circle2 {
+					display: none;
+					opacity: 0;
+				}
+				&__circle3,
+				&__circle4 {
+					display: block;
+				}
 			}
 
 			.burger {
@@ -56,13 +70,14 @@
 			display: none;
 		}
 
-		.nav-mobile {
+		.nav-mobile, &__circle {
 			display: block;
 		}
 
 		&__button {
 			margin: 60px auto 100px;
 		}
+
 	}
 
 	.team {
