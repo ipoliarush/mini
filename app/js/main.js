@@ -45,7 +45,8 @@ $(function() {
     el: {
       ham: $('.burger'),
       link: $('.nav-mobile__elem'),
-      check: $('.nav-mobile')
+      check: $('.nav-mobile'),
+      circle: $('.header__circle')
     },
 
     init: function() {
@@ -72,8 +73,8 @@ $(function() {
     },
 
     activateMenu: function() {
-      Menu.el.ham.toggleClass('burger-close');
 			Menu.el.check.toggleClass('nav-mobile-active');
+      Menu.el.circle.toggleClass('header__circle-active');
     }
   };
 
