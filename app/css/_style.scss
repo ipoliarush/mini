@@ -18,14 +18,58 @@
 			height: 150px;
 			display: block;
 			border-radius: 100px;
-			border: 2px solid $white;
 			padding-top: 40px;
 			flex-shrink: 0;
 			z-index: 100;
+			position: relative;
+			transition: all 1.1s ease;
 
+			&__svg {
+				height: 150px;
+				width: 150px;
+				position: absolute;
+				top: -2px;
+				left: -2px;
+
+			}
+			&__circle1,
+			&__circle3 {
+				stroke: $white;
+				stroke-width: 3;
+				stroke-dasharray: 500 60;
+				z-index: 5;
+				opacity: 1;
+			}
+			&__circle2,
+			&__circle4 {
+				stroke: $orange;
+				stroke-width: 3;
+				stroke-dasharray: 0 250;
+				z-index: 6;
+				transition: all 1.1s ease;
+				stroke-dashoffset: 200px;
+				opacity: 1;
+			}
+			&__circle3 {
+				display: none;
+				stroke-width: 2;
+				stroke-dasharray: 200 10;
+			}
+			&__circle4 {
+				display: none;
+				stroke-width: 2;
+				stroke-dasharray: 0 200;
+				transition: all 1.5s ease;
+				stroke-dashoffset: 190px;
+			}
 			&:hover {
 				text-decoration: none;
-				color: $white;
+				color: $orange;
+
+			}
+			&:hover .logo__circle2,
+			&:hover .logo__circle4 {
+				stroke-dasharray: 500 0;
 			}
 		}
 
@@ -48,11 +92,12 @@
 			}
 
 			&__line-one,
-			&__line-two,
-			&__line-three {
+			&__line-three,
+			&__line-two {
 				background: $white;
 				height: 3px;
 				width: 26px;
+
 				&:before {
 					display: block;
 					content: '';
@@ -61,7 +106,6 @@
 					width: 0;
 				}
 			}
-
 
 			&__line-one {
 				transition: 1.1s 0.5s;
@@ -191,6 +235,7 @@
 	}
 
 	&__circle {
+		display: none;
 		width: 200px;
 		height: 200px;
 		background: #f0f0f0;
@@ -198,14 +243,14 @@
 		z-index: 1000;
 		top: 50%;
 		left: 50%;
-		transition: .5s .6s;
+		transition: 0.5s 0.6s;
 		opacity: 0;
 		transform: translate(-50%, -50%) scale(0);
 		border-radius: 100px;
 	}
 
 	&__circle-active {
-		transition: .5s .3s;
+		transition: 0.5s 0.3s;
 		transform: translate(-50%, -50%) scale(3);
 		opacity: 1;
 		z-index: 998;
@@ -413,11 +458,33 @@
 }
 
 .minib {
-	background: url("../img/minib-bg.png") no-repeat center center/cover;
+	background: url("../img/minib-bg.jpg") no-repeat center center/cover;
 	min-height: 700px;
 	color: $white;
 	padding-top: 250px;
 	padding-bottom: 250px;
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+
+	&__triangle {
+		&_top {
+
+			left: 0;
+			bottom: 0;
+			border-bottom: 50px solid $white;
+			border-left: 100vw solid transparent;
+			position: absolute;
+		}
+
+		&_bottom {
+			right: 0;
+			top: 0;
+			border-top: 50px solid $white;
+			border-right: 100vw solid transparent;
+			position: absolute;
+		}
+	}
 
 	&__citation {
 		line-height: 1.5em;
@@ -561,6 +628,7 @@
 			width: 100%;
 			filter: grayscale(1);
 			transition: $transition05;
+			image-rendering: -webkit-optimize-contrast;
 
 			&:hover {
 				filter: none;
@@ -981,6 +1049,8 @@
 			font-size: 14px;
 			font-weight: 700;
 			text-transform: uppercase;
+			transition: all .4s ease;
+			cursor: pointer;
 
 			&:before {
 				display: block;
@@ -998,6 +1068,10 @@
 			}
 
 			&_active {
+				color: $orange;
+			}
+
+			&:hover {
 				color: $orange;
 			}
 		}
@@ -1162,6 +1236,10 @@
 	padding-top: 100px;
 	padding-bottom: 40px;
 
+	&__tel {
+		display: none;
+	}
+
 	.field {
 		position: relative;
 		margin-bottom: 12px;
@@ -1183,6 +1261,11 @@
 
 	&__form {
 		width: 55%;
+
+		label {
+			display: none;
+			margin: 0;
+		}
 
 		input,
 		textarea {
@@ -1290,26 +1373,6 @@
 			height: 100%;
 			width: 100%;
 			border: 0;
-		}
-	}
-
-	&__triangle {
-		&_top {
-			content: '';
-			left: 0;
-			bottom: 0;
-			border-bottom: 100px solid $white;
-			border-left: 100vw solid transparent;
-			position: absolute;
-		}
-
-		&_bottom {
-			content: '';
-			right: 0;
-			top: 0;
-			border-top: 100px solid $white;
-			border-right: 100vw solid transparent;
-			position: absolute;
 		}
 	}
 }

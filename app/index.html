@@ -3,19 +3,32 @@
 
 <head>
 	<meta charset="UTF-8">
-	<title>MINI</title>
-	<meta name="description" content="#">
-	<meta name="keywords" content="#">
+	<title>Mini - Creative Studio</title>
+	<meta name="description" content="Mini - Creative Studio - Создание сайтов вашей мечты">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- Favicon -->
-	<link rel="icon" href="#" type="image/x-icon">
-	<link rel="shortcut icon" href="#" type="image/x-icon">
+	<link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192" href="img/favicon/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+	<link rel="manifest" href="https://raw.githubusercontent.com/ipoliarush/ipoliarush.github.io/master/mini/img/favicon/manifest.json">
 	<!-- OG Tags -->
-	<meta property="og:title" content="#">
-	<meta property="og:description" content="#">
-	<meta property="og:type" content="#">
-	<meta property="og:image" content="#">
-	<meta property="og:site_name" content="#">
+	<meta property="og:title" content="Mini - Creative Studio">
+	<meta property="og:description" content="Создание сайтов вашей мечты">
+	<meta property="og:image" content="img/favicon/logo-medium.png">
+	<meta property="og:image:width" content="700">
+  <meta property="og:image:height" content="263">
+	<meta property="og:type" content="website">
+	<meta property="og:site_name" content="ipoliarush.github.io/mini">
 	<!-- Google Fonts -->
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@300;400;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
 	<!-- Fontawesome -->
@@ -23,16 +36,25 @@
 	<!-- CSS Styles -->
 	<link rel="stylesheet" href="css/slick.css">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/animate.css">
 	<link rel="stylesheet" href="css/main.css">
 	<!-- JS Scripts -->
 </head>
 
 <body>
 
-	<header class="header">
+	<header class="header parallaxie">
 		<div class="container">
 			<div class="head d-flex justify-content-between align-items-center">
-				<a href="#" class="logo">Mini</a>
+				<a href="#" class="logo">
+					Mini
+					<svg class="logo__svg">
+						<circle class="logo__circle1" cx="75" cy="75" r="73" fill="none" />
+						<circle class="logo__circle2" cx="75" cy="75" r="73" fill="none" />
+						<circle class="logo__circle3" cx="27" cy="27" r="25" fill="none" />
+						<circle class="logo__circle4" cx="27" cy="27" r="25" fill="none" />
+					</svg>
+				</a>
 				<nav class="nav">
 					<ul class="nav__list d-flex">
 						<li class="nav__item">
@@ -96,7 +118,7 @@
 					<div class="header__subtitle">Best Creative Studio</div>
 					<div class="header__title">Design</div>
 					<div class="header__subtitle">We Make Great Ideas Happen</div>
-					<a href="#" class="header__button">Learn More</a>
+					<a href="#" class="header__button animate__animated animate__bounceIn wow">Learn More</a>
 				</div>
 				<div class="header__item">
 					<div class="header__subtitle">Best Creative Studio</div>
@@ -116,7 +138,7 @@
 
 	<section class="about" id="about">
 		<div class="container">
-			<div class="head d-flex align-items-center">
+			<div class="head d-flex align-items-center animate__animated animate__zoomIn wow">
 				<h3 class="title wline d-flex align-items-center">
 					About
 				</h3>
@@ -202,7 +224,8 @@
 		</div>
 	</section>
 
-	<section class="minib">
+	<section class="minib parallaxie">
+		<div class="minib__triangle minib__triangle_top"></div>
 		<div class="container container__fluid">
 			<div class="minib__head text-center">
 				<h2 class="minib__citation d-flex justify-content-center">
@@ -213,11 +236,12 @@
 				John Maeda
 			</p>
 		</div>
+		<div class="minib__triangle minib__triangle_bottom"></div>
 	</section>
 
 	<section class="team" id="team">
 		<div class="container">
-			<div class="head d-flex align-items-center">
+			<div class="head d-flex align-items-center animate__animated animate__zoomIn wow">
 				<h3 class="title wline d-flex align-items-center">
 					Team
 				</h3>
@@ -226,7 +250,7 @@
 				</p>
 			</div>
 			<ul class="team__list d-flex text-center justify-content-between flex-wrap">
-				<li class="team__item d-flex flex-column align-items-center">
+				<li class="team__item d-flex flex-column align-items-center animate__animated animate__bounceIn animate__delay-1s wow">
 					<div class="team__image d-flex align-items-center justify-content-center">
 						<img src="img/author-1.jpg" alt="">
 					</div>
@@ -252,7 +276,7 @@
 						</a>
 					</div>
 				</li>
-				<li class="team__item d-flex flex-column align-items-center">
+				<li class="team__item d-flex flex-column align-items-center animate__animated animate__bounceIn wow">
 					<div class="team__image">
 						<img src="img/author-2.jpg" alt="">
 					</div>
@@ -278,7 +302,7 @@
 						</a>
 					</div>
 				</li>
-				<li class="team__item d-flex flex-column align-items-center">
+				<li class="team__item d-flex flex-column align-items-center animate__animated animate__bounceIn animate__delay-1s wow">
 					<div class="team__image">
 						<img src="img/author-3.jpg" alt="">
 					</div>
@@ -304,7 +328,7 @@
 						</a>
 					</div>
 				</li>
-				<li class="team__item d-flex flex-column align-items-center">
+				<li class="team__item d-flex flex-column align-items-center animate__animated animate__bounceIn wow">
 					<div class="team__image">
 						<img src="img/author-4.jpg" alt="">
 					</div>
@@ -334,7 +358,8 @@
 		</div>
 	</section>
 
-	<section class="minib">
+	<section class="minib parallaxie">
+		<div class="minib__triangle minib__triangle_top"></div>
 		<div class="container container__fluid">
 			<ul class="minib__list d-flex justify-content-between">
 				<li class="minib__item text-center">
@@ -367,11 +392,12 @@
 				</li>
 			</ul>
 		</div>
+		<div class="minib__triangle minib__triangle_bottom"></div>
 	</section>
 
 	<section class="service" id="service">
 		<div class="container">
-			<div class="head d-flex align-items-center">
+			<div class="head d-flex align-items-center animate__animated animate__zoomIn wow">
 				<h3 class="title wline d-flex align-items-center">
 					Service
 				</h3>
@@ -380,7 +406,7 @@
 				</p>
 			</div>
 			<ul class="activities d-flex justify-content-between">
-				<li class="activities__item text-center">
+				<li class="activities__item text-center animate__animated animate__bounceInLeft wow">
 					<div class="activities__icons icons d-flex align-items-center justify-content-center">
 						<i class="far fa-star"></i>
 					</div>
@@ -391,7 +417,7 @@
 						Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
 					</p>
 				</li>
-				<li class="activities__item text-center">
+				<li class="activities__item text-center animate__animated animate__bounceInUp animate__slow wow">
 					<div class="activities__icons icons d-flex align-items-center justify-content-center">
 						<i class="fas fa-atom"></i>
 					</div>
@@ -402,7 +428,7 @@
 						Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
 					</p>
 				</li>
-				<li class="activities__item text-center">
+				<li class="activities__item text-center animate__animated animate__bounceInRight wow">
 					<div class="activities__icons icons d-flex align-items-center justify-content-center">
 						<i class="fas fa-globe"></i>
 					</div>
@@ -445,7 +471,7 @@
 							Fourth Description
 						</span>
 						<div class="money__button">
-							<a href="#">Purchase</a>
+							<a class="animate__animated animate__bounceIn wow animate__delay-1s" href="#">Purchase</a>
 						</div>
 					</div>
 					<div class="money__item money__item_gold d-flex flex-column">
@@ -466,7 +492,7 @@
 							Fourth Description
 						</span>
 						<div class="money__button">
-							<a href="#">Purchase</a>
+							<a class="animate__animated animate__bounceIn wow" href="#">Purchase</a>
 						</div>
 					</div>
 					<div class="money__item money__item_silver d-flex flex-column">
@@ -487,7 +513,7 @@
 							Fourth Description
 						</span>
 						<div class="money__button">
-							<a href="#">Purchase</a>
+							<a class="animate__animated animate__bounceIn wow animate__delay-1s" href="#">Purchase</a>
 						</div>
 					</div>
 				</div>
@@ -495,7 +521,8 @@
 		</div>
 	</section>
 
-	<section class="minib">
+	<div class="minib parallaxie">
+		<div class="minib__triangle minib__triangle_top"></div>
 		<div class="container container__fluid">
 			<div class="minib__slider">
 				<div class="minib__elem">
@@ -533,11 +560,12 @@
 				</div>
 			</div>
 		</div>
-	</section>
+		<div class="minib__triangle minib__triangle_bottom"></div>
+	</div>
 
 	<section class="portfolio" id="portfolio">
 		<div class="container">
-			<div class="head d-flex align-items-center">
+			<div class="head d-flex align-items-center animate__animated animate__zoomIn wow">
 				<h3 class="title wline d-flex align-items-center">
 					Portfolio
 				</h3>
@@ -700,7 +728,8 @@
 		</div>
 	</section>
 
-	<section class="minib">
+	<div class="minib parallaxie">
+		<div class="minib__triangle minib__triangle_top"></div>
 		<div class="container container__fluid">
 			<div class="minib__comment icons d-flex align-items-center justify-content-center">
 				<i class="fab fa-twitter"></i>
@@ -710,11 +739,12 @@
 			</p>
 			<span class="minib__mark d-flex justify-content-center">3 hours ago</span>
 		</div>
-	</section>
+		<div class="minib__triangle minib__triangle_bottom"></div>
+	</div>
 
 	<section class="blog" id="blog">
 		<div class="container">
-			<div class="head d-flex align-items-center">
+			<div class="head d-flex align-items-center animate__animated animate__zoomIn wow">
 				<h3 class="title wline d-flex align-items-center">
 					Blog
 				</h3>
@@ -749,7 +779,7 @@
 							<p class="blog__text">
 								Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit.
 							</p>
-							<a href="#" class="blog__button">Read on</a>
+							<a href="#" class="blog__button animate__animated animate__bounceIn wow">Read on</a>
 						</div>
 					</div>
 				</div>
@@ -779,7 +809,7 @@
 							<p class="blog__text">
 								Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit.
 							</p>
-							<a href="#" class="blog__button">Read on</a>
+							<a href="#" class="blog__button animate__animated animate__bounceIn wow">Read on</a>
 						</div>
 					</div>
 				</div>
@@ -809,7 +839,7 @@
 							<p class="blog__text">
 								Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit.
 							</p>
-							<a href="#" class="blog__button">Read on</a>
+							<a href="#" class="blog__button animate__animated animate__bounceIn wow">Read on</a>
 						</div>
 					</div>
 				</div>
@@ -839,7 +869,7 @@
 							<p class="blog__text">
 								Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit.
 							</p>
-							<a href="#" class="blog__button">Read on</a>
+							<a href="#" class="blog__button animate__animated animate__bounceIn wow">Read on</a>
 						</div>
 					</div>
 				</div>
@@ -847,7 +877,8 @@
 		</div>
 	</section>
 
-	<section class="minib">
+	<section class="minib parallaxie">
+		<div class="minib__triangle minib__triangle_top"></div>
 		<div class="container container__fluid">
 			<h3 class="minib__title text-center">
 				Our Clients
@@ -867,11 +898,12 @@
 				</div>
 			</div>
 		</div>
+		<div class="minib__triangle minib__triangle_bottom"></div>
 	</section>
 
 	<section class="contact" id="contact">
 		<div class="container">
-			<div class="head d-flex align-items-center">
+			<div class="head d-flex align-items-center animate__animated animate__zoomIn wow">
 				<h3 class="title wline d-flex align-items-center">
 					Contact
 				</h3>
@@ -880,24 +912,31 @@
 				</p>
 			</div>
 			<div class="contact__content d-flex justify-content-between">
-				<form class="contact__form d-flex flex-column" action="#">
+				<form id="cform" name="cform" class="contact__form d-flex flex-column" action="" method="post">
 					<h4 class="contact__title">
 						Drop us a message
 					</h4>
 					<div class="contact__name field">
-						<input type="text" name="name" placeholder="Mike">
+						<label for="cname">Your Name</label>
+						<input required type="text" name="name" placeholder="Mike" id="cname">
 						<i class="far fa-user"></i>
 					</div>
+					<div class="contact__tel">
+						<label for="ctel">Your Phone</label>
+						<input type="tel" name="tel" placeholder="Phone" id="ctel">
+					</div>
 					<div class="contact__email field">
-						<input type="email" name="email" placeholder="E-mail">
+						<label for="cemail">Your E-mail</label>
+						<input required type="email" name="email" placeholder="E-mail" id="cemail">
 						<i class="far fa-envelope"></i>
 					</div>
 					<div class="contact__message field">
-						<textarea name="message" cols="30" rows="4" placeholder="Message"></textarea>
+						<label for="cmessage">Your Message</label>
+						<textarea required name="message" cols="30" rows="4" placeholder="Message" id="cmessage"></textarea>
 						<i class="fas fa-pencil-alt"></i>
 					</div>
 					<div class="contact__submit">
-						<button type="submit">
+						<button id="btn" type="submit" class="animate__animated animate__bounceIn wow">
 							Submit
 						</button>
 					</div>
@@ -933,14 +972,15 @@
 			</div>
 		</div>
 		<div class="contact__map">
-			<div class="contact__triangle contact__triangle_top"></div>
+			<!-- Рамки -->
+			<!--<div class="contact__triangle contact__triangle_top"></div>-->
 			<iframe
 				src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8102731743897!2d144.96287631506232!3d-37.81791274205326!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642b4758afc1d%3A0x574ffdc0c6f63260!2zMTMvMiBFbGl6YWJldGggU3QsIE1lbGJvdXJuZSBWSUMgMzAwMCwg0JDQstGB0YLRgNCw0LvQuNGP!5e0!3m2!1sru!2sua!4v1596956372471!5m2!1sru!2sua"></iframe>
-			<div class="contact__triangle contact__triangle_bottom"></div>
+			<!--<div class="contact__triangle contact__triangle_bottom"></div>-->
 		</div>
 	</section>
 
-	<footer class="footer">
+	<footer class="footer animate__animated animate__zoomInDown wow-mini">
 		<div class="container container-fluid">
 			<div class="footer__content d-flex justify-content-between">
 				<p class="footer__copy">
@@ -950,7 +990,7 @@
 					<a href="#" class="footer__item">
 						<i class="fab fa-twitter"></i>
 					</a>
-					<a href="#" class="footer__item">
+					<a href="#" class="footer__item ">
 						<i class="fab fa-facebook-f"></i>
 					</a>
 					<a href="#" class="footer__item">
@@ -977,6 +1017,10 @@
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/slick.min.js"></script>
 	<script src="js/smooth-scroll.polyfills.min.js"></script>
+	<script src="js/parallax.min.js"></script>
+	<script src="js/wow.min.js"></script>
+	<script src="js/sweetalert.min.js"></script>
+	<script src="js/ajax.js"></script>
 
 	<script src="js/main.js"></script>
 

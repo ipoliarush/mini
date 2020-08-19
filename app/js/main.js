@@ -38,8 +38,20 @@ $(function() {
     },
   });
 
+  //Паралакс
+  width = $(window).width();
+  if (width >= 991) {
+    if ($('.parallaxie').length !== 0) {
+      $('.parallaxie').parallaxie({
+        speed: 0.4,
+        size: "auto",
+      });
+    }
+  }
 
-//Работа гамбургер меню
+
+
+  //Работа гамбургер меню
   var Menu = {
 
     el: {
@@ -73,17 +85,30 @@ $(function() {
     },
 
     activateMenu: function() {
-			Menu.el.check.toggleClass('nav-mobile-active');
+      Menu.el.check.toggleClass('nav-mobile-active');
       Menu.el.circle.toggleClass('header__circle-active');
     }
   };
 
   Menu.init();
 
+  //Работа скролла
+  var scroll = new SmoothScroll('a[href*="#"]', {
+    speed: 500,
+    easing: 'easeInOutCubic'
+  });
 
-	var scroll = new SmoothScroll('a[href*="#"]', {
-		speed: 500,
-		easing: 'easeInOutCubic'
-	});
+  //Работа wow animate
+  var wow = new WOW({
+    offset: 200,
+    mobile: false,
+  });
+  wow.init();
+
+  var wowMini = new WOW({
+    mobile: false,
+    boxClass: 'wow-mini',
+  });
+  wowMini.init();
 
 });
