@@ -1236,6 +1236,10 @@
 	padding-top: 100px;
 	padding-bottom: 40px;
 
+	&__tel {
+		display: none;
+	}
+
 	.field {
 		position: relative;
 		margin-bottom: 12px;
